@@ -1,6 +1,7 @@
 {
   "private": true,
   "workspaces": [
+    "bip39-wasm",
     "hello-wasm",
     "app"
   ]

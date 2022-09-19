@@ -1,14 +1,20 @@
 import './App.css'
 import { useEffect, useState } from 'react'
+import { MnemonicLength } from './components/MnemonicLength'
+import { WordSelector } from './components/WordSelector'
+let loadedWasm = {} as any;
 
 function App() {
-  const [wasm, setWasm] = useState<typeof import('hello-wasm')>()
+  
+  const [wasm, setWasm] = useState<typeof import('bip39-wasm')>()
   const [val, setValue] = useState('')
+  
   useEffect(() => {
     ;(async () => {
       try {
-        const wasm = await import('hello-wasm')
+        const wasm = await import('bip39-wasm')
         setWasm(wasm)
+        loadedWasm = wasm;
       } catch (e) {
         console.error(e)
       }
@@ -18,6 +24,9 @@ function App() {
   return (
     <div>
       <h1>rust monorepo wasm demo</h1>
+      <MnemonicLength/>
+      <WordSelector/>
+
       <label htmlFor="name">Your name?</label>
       <input
         value={val}
@@ -29,4 +38,4 @@ function App() {
   )
 }
 
-export default App
+export {App, loadedWasm}

@@ -1,6 +1,7 @@
 {
   "name": "app",
   "version": "1.0.0",
+  "homepage": "https://deklosdev.github.io/bip39-wasm",
   "private": true,
   "dependencies": {
     "@craco/craco": "^6.0.0",
@@ -17,7 +18,9 @@
     "react-scripts": "5.0.1",
     "typescript": "^4.7.4",
     "web-vitals": "^2.1.4",
-    "hello-wasm": "^1.0.0"
+    "hello-wasm": "^1.0.0",
+    "bip39-wasm": "0.0.1",
+    "react-multi-select-component": "4.3.2"
   },
   "scripts": {
     "start": "craco start",
@@ -48,6 +51,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "homepage": "."
+  }
 }
