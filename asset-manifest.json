@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/bip39-wasm/static/css/main.31d6cfe0.css",
+    "main.js": "/bip39-wasm/static/js/main.dcf2a25f.js",
+    "static/js/720.bff79e18.chunk.js": "/bip39-wasm/static/js/720.bff79e18.chunk.js",
+    "module.wasm": "/bip39-wasm/834007a55b179d28c7b5.module.wasm",
+    "index.html": "/bip39-wasm/index.html",
+    "main.dcf2a25f.js.map": "/bip39-wasm/static/js/main.dcf2a25f.js.map",
+    "720.bff79e18.chunk.js.map": "/bip39-wasm/static/js/720.bff79e18.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31d6cfe0.css",
+    "static/js/main.dcf2a25f.js"
+  ]
+}
